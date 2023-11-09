@@ -31,7 +31,7 @@ const Contact = () => {
                   "Content-Type": "application/json",
               }
           })
-          result = await result.json() 
+          // result = await result.json() 
   
           if (result) {
               setLoading(false)
