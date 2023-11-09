@@ -27,7 +27,7 @@ const Contact = () => {
             {
               method: "post",
               body: JSON.stringify({ name, email, subject, message }),
-              mode: 'no-cors',
+              // mode: 'no-cors',
               headers: {
                 "Content-Type": "application/json",
               }
