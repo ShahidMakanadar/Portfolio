@@ -23,13 +23,12 @@ const Contact = () => {
         if (pattern.test(email)) {
           setLoading(true);
           let result = await fetch(
-            "https://mern-back-eight.vercel.app/sendEmail",
+            "https://portfolio-back-end-seven.vercel.app/sendEmail",
             {
               method: "post",
               body: JSON.stringify({ name, email, subject, message }),
               headers: {
                 "Content-Type": "application/json",
-                "Origin": "https://shahid-makandar.vercel.app/",
               }
             }
           );
