@@ -29,7 +29,8 @@ const Contact = () => {
               body: JSON.stringify({ name, email, subject, message }),
               headers: {
                 "Content-Type": "application/json",
-              },
+                "Origin": "https://mern-front-rose.vercel.app",
+              }
             }
           );
           // result = await result.json()
