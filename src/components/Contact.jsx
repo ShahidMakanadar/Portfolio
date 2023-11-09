@@ -33,9 +33,9 @@ const Contact = () => {
               }
             }
           );
-          // result = await result.json()
+          result = await result.json()
 
-          if (result) {
+          if (result.result) {
             setLoading(false);
             setEmail("");
             setMessage("");
