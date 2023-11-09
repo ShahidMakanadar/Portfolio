@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 //alert and loading imports
-import PulseLoader  from "react-spinners/PulseLoader";
-import 'react-toastify/dist/ReactToastify.css';
-import Swal from 'sweetalert2'
+import PulseLoader from "react-spinners/PulseLoader";
+import "react-toastify/dist/ReactToastify.css";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -11,105 +11,104 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [empty, setEmpty] = useState(false);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const handleEmail = async () => {
     if (!name || !email || !subject || !message) {
       setEmpty(true);
       return false;
-    } 
-    else {
-      
-      try{
+    } else {
+      try {
         const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        if(pattern.test(email)){
-          setLoading(true)
-          let result = await fetch('https://mern-back-eight.vercel.app/sendEmail', {
-              method: 'post',
+        if (pattern.test(email)) {
+          setLoading(true);
+          let result = await fetch(
+            "https://mern-back-eight.vercel.app/sendEmail",
+            {
+              method: "post",
               body: JSON.stringify({ name, email, subject, message }),
               headers: {
-                  "Content-Type": "application/json",
-              }
-          })
-          // result = await result.json() 
-  
+                "Content-Type": "application/json",
+              },
+            }
+          );
+          // result = await result.json()
+
           if (result) {
-              setLoading(false)
-              setEmail('')
-              setMessage('')
-              // successfull alert box
-              const Toast = Swal.mixin({
-                  toast: true,
-                  position: 'top-end',
-                  showConfirmButton: false,
-                  timer: 3000,
-                  timerProgressBar: true,
-                  didOpen: (toast) => {
-                      toast.addEventListener('mouseenter', Swal.stopTimer)
-                      toast.addEventListener('mouseleave', Swal.resumeTimer)
-                  }
-              })
-              Toast.fire({
-                  icon: 'success',
-                  title: ' Message sent successfully '
-              })
-          }
-          else{
-            setEmail('')
-            setLoading(false)
+            setLoading(false);
+            setEmail("");
+            setMessage("");
+            // successfull alert box
             const Toast = Swal.mixin({
               toast: true,
-              position: 'top-end',
+              position: "top-end",
               showConfirmButton: false,
               timer: 3000,
               timerProgressBar: true,
               didOpen: (toast) => {
-                  toast.addEventListener('mouseenter', Swal.stopTimer)
-                  toast.addEventListener('mouseleave', Swal.resumeTimer)
-              }
-              })
-              Toast.fire({
-                  icon: 'error',
-                  title: ' Something is wrong...! '
-              })
+                toast.addEventListener("mouseenter", Swal.stopTimer);
+                toast.addEventListener("mouseleave", Swal.resumeTimer);
+              },
+            });
+            Toast.fire({
+              icon: "success",
+              title: " Message sent successfully ",
+            });
+          } else {
+            setEmail("");
+            setLoading(false);
+            const Toast = Swal.mixin({
+              toast: true,
+              position: "top-end",
+              showConfirmButton: false,
+              timer: 3000,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                toast.addEventListener("mouseenter", Swal.stopTimer);
+                toast.addEventListener("mouseleave", Swal.resumeTimer);
+              },
+            });
+            Toast.fire({
+              icon: "error",
+              title: " Something is wrong...! ",
+            });
           }
-        }
-        else{
-          setEmail('')
+        } else {
+          setEmail("");
           const Toast = Swal.mixin({
             toast: true,
-            position: 'top-end',
+            position: "top-end",
             showConfirmButton: false,
             timer: 3000,
             timerProgressBar: true,
             didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer)
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-            })
-            Toast.fire({
-                icon: 'error',
-                title: ' Email-Id is not valid '
-            })
+              toast.addEventListener("mouseenter", Swal.stopTimer);
+              toast.addEventListener("mouseleave", Swal.resumeTimer);
+            },
+          });
+          Toast.fire({
+            icon: "error",
+            title: " Email-Id is not valid ",
+          });
         }
-      }catch{
-        setEmail('')
-            setLoading(false)
-            const Toast = Swal.mixin({
-              toast: true,
-              position: 'top-end',
-              showConfirmButton: false,
-              timer: 3000,
-              timerProgressBar: true,
-              didOpen: (toast) => {
-                  toast.addEventListener('mouseenter', Swal.stopTimer)
-                  toast.addEventListener('mouseleave', Swal.resumeTimer)
-              }
-              })
-              Toast.fire({
-                  icon: 'error',
-                  title: ' please try again leter! '
-              })
+      } catch {
+        setEmail("");
+        setLoading(false);
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener("mouseenter", Swal.stopTimer);
+            toast.addEventListener("mouseleave", Swal.resumeTimer);
+          },
+        });
+        Toast.fire({
+          icon: "error",
+          title: " please try again leter! ",
+        });
       }
     }
   };
@@ -146,7 +145,7 @@ const Contact = () => {
                 className="p-2 rounded-lg text-black outline-none text-base bg-[#E8F0FE] w-1/2"
                 type="text"
               />
-             
+
               <input
                 onChange={(e) => {
                   setEmail(e.target.value);
@@ -178,31 +177,33 @@ const Contact = () => {
               className="p-2 rounded-lg text-black outline-none text-base bg-[#E8F0FE]"
               rows={5}
             ></textarea>
-            {empty && <span className=" text-sm text-white bg-red-400 bg-opacity-50 px-5 font-semibold tracking-[2px] rounded-[4px] text-center">Please fill all block's !</span>}
-            {
-                loading ?
-                  <button
-                    type="button"
-                    className="bg-[#f7ff8a] hover:bg-[#d9de9b] py-2 px-[45%]  rounded-md"
-                   
-                  >
-                    <PulseLoader 
-                        color={"#000000"}
-                        loading={loading}
-                        size={5}
-                        aria-label="Loading Spinner"
-                        data-testid="loader"
-                    />
-                  </button>
-                :
-                <button
-                  type="button"
-                  className="bg-[#f7ff8a] hover:bg-[#d1d691] py-2 px-10 rounded-md text-black font-bold text-lg"
-                  onClick={handleEmail}
-                >
+            {empty && (
+              <span className=" text-sm text-white bg-red-400 bg-opacity-50 px-5 font-semibold tracking-[2px] rounded-[4px] text-center">
+                Please fill all block's !
+              </span>
+            )}
+            {loading ? (
+              <button
+                type="button"
+                className="bg-[#f7ff8a] hover:bg-[#d9de9b] py-2 px-[45%]  rounded-md"
+              >
+                <PulseLoader
+                  color={"#000000"}
+                  loading={loading}
+                  size={5}
+                  aria-label="Loading Spinner"
+                  data-testid="loader"
+                />
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="bg-[#f7ff8a] hover:bg-[#d1d691] py-2 px-10 rounded-md text-black font-bold text-lg"
+                onClick={handleEmail}
+              >
                 Submit
-                </button>
-            }
+              </button>
+            )}
           </form>
           <br></br>
           <h4>
