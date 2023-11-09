@@ -68,14 +68,14 @@ function About() {
             </span>{' '}
             from rani channamma university Belagavi. My journey has been shaped by a fervent
             dedication to honing my craft through{' '}
-            <span className="underline underline-offset-4 decoration-[#f7ff8a]">
+            <span className="underline underline-offset-4  decoration-[#f7ff8a]">
               independent projects
             </span>
             .
           </p>
           <p>
             With an insatiable drive, I{' '}
-            <span className="underline underline-offset-4 [#f7ff8a]">
+            <span className="underline underline-offset-4 decoration-[#f7ff8a]">
               specialize
             </span>{' '}
             in crafting impactful web applications and user-centric experiences.
