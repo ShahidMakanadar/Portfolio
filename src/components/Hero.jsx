@@ -54,7 +54,7 @@ function Hero() {
             </span>
           </h1>
           <a
-            href="https://res.cloudinary.com/shahid-mkd/image/upload/v1705674797/resum%20pdf%20file/y0fclblfxjxk5iswbl2b.pdf"
+            href="https://github.com/ShahidMakanadar/Portfolio/blob/main/src/components/Shahid%20Makandar(CV).pdf"
           >
             <button className="Dbutton"> 
               <svg
@@ -85,7 +85,7 @@ function Hero() {
                   </g>{" "}
                 </g>
               </svg>{" "}
-              <span> Download My Resume ( cv ) , Here</span>
+              <span> Go to My Resume ( cv ), Click here </span>
             </button>
           </a>
         </div>
