@@ -24,7 +24,7 @@ export const projects = [
   {
     title: "Chatify (Real-Time Chatting)",
     imgUrl: "/chatify.png",
-    desc: "Chatifyis not just a chat application; it's an immersive real-time communication experience. Built with the MERN stack and Chakra UI, the app boasts secure user authentication, BtoB chatting, and dynamic group conversations. Thanks to Socket.io, users can enjoy instant messaging, making communication a breeze. The project is a testament to proficiency in full-stack development, real-time technologies, and responsive design.. deployed on Render",
+    desc: "Chatifyis not just a chat application; it's an immersive real-time communication experience. Built with the MERN stack and Chakra UI, the app boasts secure user authentication, BtoB chatting, and dynamic group conversations. Thanks to Socket.io, users can enjoy instant messaging, making communication a breeze. The project is a testament to proficiency in full-stack development, real-time technologies, and responsive design. deployed on Render",
     tags: [
       "Socket.io",
       "Chakra UI",
