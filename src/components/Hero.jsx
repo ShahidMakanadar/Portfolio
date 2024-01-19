@@ -53,10 +53,42 @@ function Hero() {
               <span className="text-white  tracking-[1px]">...</span>
             </span>
           </h1>
-          <button class="relative overflow-hidden h-12 px-8 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white focus:outline-none">
-            <span class="relative z-10">Download</span>
-            <span class="absolute top-0 left-0 w-full h-full transform scale-x-0 origin-left bg-gradient-to-r from-purple-600 to-indigo-600 transition-transform duration-500"></span>
-          </button>
+          <a
+            href="./Shahid Makandar(CV).pdf"
+            download={"Shahid Makandar(CV).pdf"}
+          >
+            <button className="Dbutton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="yellow"
+                viewBox="0 0 24 24"
+                height="24px"
+                width="24px"
+              >
+                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                <g
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  id="SVGRepo_tracerCarrier"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <g id="Interface / Download">
+                    {" "}
+                    <path
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#f1f1f1"
+                      d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                      id="Vector"
+                    ></path>{" "}
+                  </g>{" "}
+                </g>
+              </svg>{" "}
+              <span> Download My Resume ( cv ) , Here</span>
+            </button>
+          </a>
         </div>
       </motion.div>
       <div className="absolute -bottom-4 animate-bounce w-full hidden md:flex justify-center">

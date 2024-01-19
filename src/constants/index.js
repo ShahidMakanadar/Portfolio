@@ -22,18 +22,24 @@ export const projects = [
     codeUrl: "https://github.com/ShahidMakanadar",
   },
   {
-    title: "Disney+ Hotstar",
-    imgUrl: "/Hotstar.png",
-    desc: "Disney Plus Hotstar clone built using Vite, React, TMDB API, and Tailwind CSS. This project combines my passion for front-end development, movie streaming, and user interface design.This project represents my commitment to honing my skills in web development and showcases my expertise in building responsive and user-friendly applications. I thoroughly enjoyed working on it and am eager to continue exploring the limitless possibilities of web development. deployed on Vercel",
+    title: "Chatify (Real-Time Chatting)",
+    imgUrl: "/chatify.png",
+    desc: "Chatifyis not just a chat application; it's an immersive real-time communication experience. Built with the MERN stack and Chakra UI, the app boasts secure user authentication, BtoB chatting, and dynamic group conversations. Thanks to Socket.io, users can enjoy instant messaging, making communication a breeze. The project is a testament to proficiency in full-stack development, real-time technologies, and responsive design.. deployed on Render",
     tags: [
+      "Socket.io",
+      "Chakra UI",
       "Javascript",
+      "Cloudinary",
       "React-JS",
-      "TailwindCSS",
-      "TMDB",
-      "Responsiveness"
+      "ContextAPI",
+      "Express.JS",
+      "Node-JS",
+      "MongoDB",
+      "JWT-Auth",
+      "REST APIs"
     ],
-    liveUrl: "https://disney-plus-hotstar-clone-xi.vercel.app/",
-    codeUrl: "https://github.com/ShahidMakanadar/Disney_Plus_Hotstar-Clone",
+    liveUrl: "https://chatify-xk4g.onrender.com/",
+    codeUrl: "https://github.com/ShahidMakanadar/chatify",
   },
   {
     title: "Disney+ Hotstar",
@@ -140,16 +146,16 @@ export const skills = [
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
     proficiency: 100,
   },
+  // {
+  //   name: "Redux",
+  //   imgUrl:
+  //     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+  //   proficiency: 100,
+  // },
   {
-    name: "Redux",
+    name: "Java",
     imgUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-    proficiency: 100,
-  },
-  {
-    name: "Python",
-    imgUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
     proficiency: 100,
   },
 ];
