@@ -1,13 +1,12 @@
-import React from 'react';
-import Image from './Images/profile.png';
-import BackGroundCircle from './BackGroundCircle';
-import { motion } from 'framer-motion';
+import React from "react";
+import Image from "./Images/profile.png";
+import BackGroundCircle from "./BackGroundCircle";
+import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 function Hero() {
-
   const [text, count] = useTypewriter({
-    words: ["Express-JS",'Node-JS', "React-JS",'Mongo-DB', "MERN-Stack"],
+    words: ["Express-JS", "Node-JS", "React-JS", "Mongo-DB", "MERN-Stack"],
     loop: true,
     delaySpeed: 1500,
   });
@@ -45,17 +44,19 @@ function Hero() {
         <div className="text-white-400 px-4 text-xl sm:text-3xl">
           <h1 className="pb-3">
             <span className="font-semibold">
-              {' '}
-              ... {' '}
+              {" "}
+              ...{" "}
               <span className="text-[#f7ff8a] font-mono tracking-[5px]">
                 {text}
               </span>
               <Cursor cursorColor="#FDBA74" />
-              <span className="text-white  tracking-[1px]">
-                ...
-              </span>
+              <span className="text-white  tracking-[1px]">...</span>
             </span>
           </h1>
+          <button class="relative overflow-hidden h-12 px-8 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white focus:outline-none">
+            <span class="relative z-10">Download</span>
+            <span class="absolute top-0 left-0 w-full h-full transform scale-x-0 origin-left bg-gradient-to-r from-purple-600 to-indigo-600 transition-transform duration-500"></span>
+          </button>
         </div>
       </motion.div>
       <div className="absolute -bottom-4 animate-bounce w-full hidden md:flex justify-center">
@@ -63,9 +64,7 @@ function Hero() {
           href="#about"
           className="group hidden transform md:flex items-center flex-col"
         >
-          <span className="text-[#f7ff8a] group-hover:text-white">
-            Scroll
-          </span>
+          <span className="text-[#f7ff8a] group-hover:text-white">Scroll</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
