@@ -55,7 +55,7 @@ function Hero() {
           </h1>
           <a
             href="./Shahid Makandar(CV).pdf"
-            download={"Shahid Makandar(CV).pdf"}
+            download
           >
             <button className="Dbutton">
               <svg
