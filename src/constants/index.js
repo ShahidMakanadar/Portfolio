@@ -34,6 +34,34 @@ export const projects = [
     ],
     liveUrl: "https://disney-plus-hotstar-clone-xi.vercel.app/",
     codeUrl: "https://github.com/ShahidMakanadar/Disney_Plus_Hotstar-Clone",
+  },
+  {
+    title: "Disney+ Hotstar",
+    imgUrl: "/Hotstar.png",
+    desc: "Disney Plus Hotstar clone built using Vite, React, TMDB API, and Tailwind CSS. This project combines my passion for front-end development, movie streaming, and user interface design.This project represents my commitment to honing my skills in web development and showcases my expertise in building responsive and user-friendly applications. I thoroughly enjoyed working on it and am eager to continue exploring the limitless possibilities of web development. deployed on Vercel",
+    tags: [
+      "Javascript",
+      "React-JS",
+      "TailwindCSS",
+      "TMDB",
+      "Responsiveness"
+    ],
+    liveUrl: "https://disney-plus-hotstar-clone-xi.vercel.app/",
+    codeUrl: "https://github.com/ShahidMakanadar/Disney_Plus_Hotstar-Clone",
+  },
+  {
+    title: "Disney+ Hotstar",
+    imgUrl: "/Hotstar.png",
+    desc: "Disney Plus Hotstar clone built using Vite, React, TMDB API, and Tailwind CSS. This project combines my passion for front-end development, movie streaming, and user interface design.This project represents my commitment to honing my skills in web development and showcases my expertise in building responsive and user-friendly applications. I thoroughly enjoyed working on it and am eager to continue exploring the limitless possibilities of web development. deployed on Vercel",
+    tags: [
+      "Javascript",
+      "React-JS",
+      "TailwindCSS",
+      "TMDB",
+      "Responsiveness"
+    ],
+    liveUrl: "https://disney-plus-hotstar-clone-xi.vercel.app/",
+    codeUrl: "https://github.com/ShahidMakanadar/Disney_Plus_Hotstar-Clone",
   }
 ];
 
