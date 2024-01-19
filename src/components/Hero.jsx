@@ -15,7 +15,7 @@ function Hero() {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = 'https://github.com/ShahidMakanadar/Portfolio/blob/main/src/components/Shahid%20Makandar(CV).pdf';
-    link.download = 'Shahid%20Makandar(CV).pdf';
+    link.download = 'Shahid Makandar(CV).pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
