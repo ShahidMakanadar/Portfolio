@@ -11,16 +11,6 @@ function Hero() {
     delaySpeed: 1500,
   });
 
-
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = 'https://github.com/ShahidMakanadar/Portfolio/blob/main/src/components/Shahid%20Makandar(CV).pdf';
-    link.download = 'Shahid Makandar(CV).pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <div className="flex flex-col md:mt-14 text-white w-full h-screen space-y-8 items-center justify-center text-center overflow-hidden">
       <BackGroundCircle />
@@ -63,8 +53,11 @@ function Hero() {
               <span className="text-white  tracking-[1px]">...</span>
             </span>
           </h1>
-    
-            <button className="Dbutton" onClick={handleDownload}> 
+          <a
+            href="https://github.com/ShahidMakanadar/Portfolio/blob/main/src/components/Shahid%20Makandar(CV).pdf"
+            download="Shahid Makandar(CV).pdf"
+          >
+            <button className="Dbutton"> 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="yellow"
@@ -95,7 +88,7 @@ function Hero() {
               </svg>{" "}
               <span> Download My Resume ( cv ) , Here</span>
             </button>
-       
+          </a>
         </div>
       </motion.div>
       <div className="absolute -bottom-4 animate-bounce w-full hidden md:flex justify-center">
