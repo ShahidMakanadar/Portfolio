@@ -54,7 +54,7 @@ function Hero() {
             </span>
           </h1>
           <a
-            href="https://github.com/ShahidMakanadar/Portfolio/blob/main/src/components/Shahid%20Makandar(CV).pdf"
+            src="https://github.com/ShahidMakanadar/Portfolio/blob/main/src/components/Shahid%20Makandar(CV).pdf"
             download="Shahid Makandar(CV).pdf"
           >
             <button className="Dbutton"> 
