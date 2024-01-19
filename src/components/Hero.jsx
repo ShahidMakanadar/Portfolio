@@ -55,7 +55,6 @@ function Hero() {
           </h1>
           <a
             href="https://res.cloudinary.com/shahid-mkd/image/upload/v1705674797/resum%20pdf%20file/y0fclblfxjxk5iswbl2b.pdf"
-            download="Shahid Makandar(CV).pdf"
           >
             <button className="Dbutton"> 
               <svg
