@@ -45,18 +45,16 @@ function Hero() {
           <h1 className="pb-3">
             <span className="font-semibold">
               {" "}
-              ...{" "}
+              .{" "}
               <span className="text-[#f7ff8a] font-mono tracking-[5px]">
                 {text}
               </span>
               <Cursor cursorColor="#FDBA74" />
-              <span className="text-white  tracking-[1px]">...</span>
+              <span className="text-white  tracking-[1px]">.</span>
             </span>
           </h1>
-          <a
-            href="https://github.com/ShahidMakanadar/Portfolio/blob/main/src/components/Shahid%20Makandar(CV).pdf"
-          >
-            <button className="Dbutton"> 
+          <a href="https://drive.google.com/file/d/1AfEcVrSu1iqbh78-_hlD1No-QEdHQ1XJ/view?usp=sharing">
+            <button className="Dbutton">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="yellow"
@@ -85,7 +83,7 @@ function Hero() {
                   </g>{" "}
                 </g>
               </svg>{" "}
-              <span> Go to My Resume ( cv ), Click here </span>
+              <span> . . . Download My Resume ( cv ). . .</span>
             </button>
           </a>
         </div>
