@@ -146,12 +146,18 @@ export const skills = [
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
     proficiency: 100,
   },
-  // {
-  //   name: "Redux",
-  //   imgUrl:
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-  //   proficiency: 100,
-  // },
+  {
+    name: "Redux",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    proficiency: 100,
+  },
+  {
+    name: "Chakra-ui",
+    imgUrl:
+      "https://www.coffeeclass.io/logos/chakra-ui.png",
+    proficiency: 100,
+  },
   {
     name: "Java",
     imgUrl:
