@@ -53,7 +53,7 @@ function Hero() {
               <span className="text-white  tracking-[1px]">.</span>
             </span>
           </h1>
-          <a href="https://drive.google.com/">
+          <a href="https://google.com/">
             <button className="Dbutton">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
