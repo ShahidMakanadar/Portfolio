@@ -212,10 +212,10 @@ const Contact = () => {
             <span className=" text-yellow-300">E-mail : </span>{" "}
             shahidmakandar2000@gmail.com
           </h4>
-          <h4>
+          {/* <h4>
             {" "}
             <span className=" text-yellow-300">Mobile-num : </span> 6361548398
-          </h4>
+          </h4> */}
           <br></br>
         </div>
       </div>
