@@ -16,7 +16,7 @@ export const projects = [
       "MongoDB",
       "JWT-Auth",
       "Nodemailer",
-      "REST APIs"
+      "REST APIs",
     ],
     liveUrl: "https://belcake.vercel.app/",
     codeUrl: "https://github.com/ShahidMakanadar",
@@ -36,7 +36,7 @@ export const projects = [
       "Node-JS",
       "MongoDB",
       "JWT-Auth",
-      "REST APIs"
+      "REST APIs",
     ],
     liveUrl: "https://chatify-xk4g.onrender.com/",
     codeUrl: "https://github.com/ShahidMakanadar/chatify",
@@ -45,13 +45,7 @@ export const projects = [
     title: "Disney+ Hotstar",
     imgUrl: "/Hotstar.png",
     desc: "Disney Plus Hotstar clone built using Vite, React, TMDB API, and Tailwind CSS. This project combines my passion for front-end development, movie streaming, and user interface design.This project represents my commitment to honing my skills in web development and showcases my expertise in building responsive and user-friendly applications. I thoroughly enjoyed working on it and am eager to continue exploring the limitless possibilities of web development. deployed on Vercel",
-    tags: [
-      "Javascript",
-      "React-JS",
-      "TailwindCSS",
-      "TMDB",
-      "Responsiveness"
-    ],
+    tags: ["Javascript", "React-JS", "TailwindCSS", "TMDB", "Responsiveness"],
     liveUrl: "https://disney-plus-hotstar-clone-xi.vercel.app/",
     codeUrl: "https://github.com/ShahidMakanadar/Disney_Plus_Hotstar-Clone",
   },
@@ -59,19 +53,11 @@ export const projects = [
     title: "Disney+ Hotstar",
     imgUrl: "/Hotstar.png",
     desc: "Disney Plus Hotstar clone built using Vite, React, TMDB API, and Tailwind CSS. This project combines my passion for front-end development, movie streaming, and user interface design.This project represents my commitment to honing my skills in web development and showcases my expertise in building responsive and user-friendly applications. I thoroughly enjoyed working on it and am eager to continue exploring the limitless possibilities of web development. deployed on Vercel",
-    tags: [
-      "Javascript",
-      "React-JS",
-      "TailwindCSS",
-      "TMDB",
-      "Responsiveness"
-    ],
+    tags: ["Javascript", "React-JS", "TailwindCSS", "TMDB", "Responsiveness"],
     liveUrl: "https://disney-plus-hotstar-clone-xi.vercel.app/",
     codeUrl: "https://github.com/ShahidMakanadar/Disney_Plus_Hotstar-Clone",
-  }
+  },
 ];
-
-
 
 export const skills = [
   {
@@ -143,7 +129,7 @@ export const skills = [
   {
     name: "Bootstrap",
     imgUrl:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
     proficiency: 100,
   },
   {
@@ -154,14 +140,43 @@ export const skills = [
   },
   {
     name: "Chakra-ui",
-    imgUrl:
-      "https://www.coffeeclass.io/logos/chakra-ui.png",
+    imgUrl: "https://www.coffeeclass.io/logos/chakra-ui.png",
     proficiency: 100,
   },
   {
-    name: "Java",
+    name: "C-Sharp",
     imgUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+    proficiency: 100,
+  },
+  {
+    name: "ASP.NET Core",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+    proficiency: 100,
+  },
+  {
+    name: "Dot-Net",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original-wordmark.svg",
+    proficiency: 100,
+  },
+  {
+    name: "SSMS",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
+    proficiency: 100,
+  },
+  {
+    name: "J-query",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg",
+    proficiency: 100,
+  },
+  {
+    name: "Python",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
     proficiency: 100,
   },
 ];

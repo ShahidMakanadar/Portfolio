@@ -6,7 +6,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 function Hero() {
   const [text, count] = useTypewriter({
-    words: ["Express-JS", "Node-JS", "React-JS", "Mongo-DB", "MERN-Stack"],
+    words: [ "SSMS(SQL)", "Dot-Net", "ASP.NET Core", "Express-JS", "Node-JS", "React-JS", "Mongo-DB", "MERN-Stack"],
     loop: true,
     delaySpeed: 1500,
   });
@@ -56,7 +56,7 @@ function Hero() {
           <a href="https://google.com/">
             <button className="Dbutton">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg" 
                 fill="yellow"
                 viewBox="0 0 24 24"
                 height="24px"

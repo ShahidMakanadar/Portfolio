@@ -37,7 +37,7 @@ function About() {
 
       <div className="px-0 space-y-10 md:px-4 md:w-1/2 md:mt-0 mt-24">
         <h1 className="lg:text-2xl text-2xl font-semibold">
-          Here is a{' '}Little background
+          Here’s a Little Background
         </h1>
         <motion.div
           initial={{
@@ -58,51 +58,40 @@ function About() {
             <span className="underline underline-offset-2 font-bold text-[#f7ff8a] tracking-wider">
               Shahid Makandar
             </span>{' '}
-            – a skilled web developer with a robust foundation in the world of{' '}
-            <span className="underline underline-offset-4 decoration-[#f7ff8a]">
-              web development
-            </span>
-            . I'm a{' '}
-            <span className="underline underline-offset-4 decoration-[#f7ff8a]">
-            BCA finel year student,
-            </span>{' '}
-            from rani channamma university Belagavi. My journey has been shaped by a fervent
-            dedication to honing my craft through{' '}
-            <span className="underline underline-offset-4  decoration-[#f7ff8a]">
-              independent projects
-            </span>
-            .
+            – a passionate web developer with a strong foundation in both frontend and backend technologies. 
+            I hold a Bachelor's degree in Computer Applications (BCA) from Rani Channamma University, Belagavi.
           </p>
           <p>
-            With an insatiable drive, I{' '}
+            My expertise lies in building robust and scalable web applications. 
+            I specialize in the{' '}
             <span className="underline underline-offset-4 decoration-[#f7ff8a]">
-              specialize
-            </span>{' '}
-            in crafting impactful web applications and user-centric experiences.
-            My academic journey has paved the way for a deep proficiency in a
-            range of{' '}
-            <span className="underline underline-offset-4 decoration-[#f7ff8a]">
-              web technologies
+              MERN stack, ASP.NET Core, and .NET development
             </span>
-            , including{' '}
-            <span>
-              JavaScript, React JS, Express.js, Node Js, Tailwind CSS, MongoDB, and more...
-            </span>{' '}
-
+            , with a deep understanding of backend architecture and database management using{' '}
+            <span className="underline underline-offset-4 decoration-[#f7ff8a]">
+              SQL Server (SSMS)
+            </span>
+            . My technical proficiency extends to JavaScript, React.js, Express.js, Node.js, Tailwind CSS, and MongoDB.
           </p>
           <p>
-            Now, I'm on the lookout for exciting opportunities to apply my
-            skills and contribute to dynamic web projects. If you're seeking a
-            dedicated and innovative developer,{' '}
+            Currently, I am expanding my skill set by learning{' '}
             <span className="underline underline-offset-4 decoration-[#f7ff8a]">
-              let's connect and explore
-            </span>{' '}
-            potential collaborations. Feel free to reach out. Together, we can
-            create exceptional web experiences.
+              Azure DevOps and Microsoft Admin Center
+            </span>
+            , aiming to strengthen my expertise in cloud infrastructure, CI/CD pipelines, and system administration.
+          </p>
+          <p>
+            I am actively seeking opportunities to contribute my skills and collaborate on innovative projects. 
+            If you're looking for a dedicated and results-driven developer,{' '}
+            <span className="underline underline-offset-4 decoration-[#f7ff8a]">
+              let’s connect
+            </span>
+            ! Together, we can build exceptional digital experiences.
           </p>
         </motion.div>
         <AboutBgSvg />
       </div>
+
     </motion.div>
   );
 }
